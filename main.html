@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROST - Sistema de Controle de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">❄️</div>
+            <div class="title">FROST</div>
+        </div>
+
+        <div class="location">Rio de Janeiro - RJ</div>
+
+        <div class="main-content">
+            <!-- Painel de Temperatura -->
+            <div class="panel">
+                <div class="panel-title">Temperatura</div>
+                
+                <div class="metric-row">
+                    <div class="metric-label">Temperatura atual:</div>
+                    <div class="metric-value">32° C</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Temperatura externa:</div>
+                    <div class="metric-value">35° C</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Sensação Térmica:</div>
+                    <div class="metric-value">35° C</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Ponto de Orvalho:</div>
+                    <div class="metric-value">10° C</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Umidade Relativa:</div>
+                    <div class="metric-value">50 %</div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <div class="stat-label">MAX</div>
+                        <div class="stat-value">35° C</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">MIN</div>
+                        <div class="stat-value">25° C</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">AVG</div>
+                        <div class="stat-value">30° C</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel de Sistema de Resfriamento -->
+            <div class="panel">
+                <div class="panel-title">Sistema de Resfriamento</div>
+                
+                <div class="control-row">
+                    <div class="control-label">
+                        <span>Status:</span>
+                        <div class="status-indicator"></div>
+                    </div>
+                    <div class="control-label">
+                        <span>Modo:</span>
+                        <select class="dropdown">
+                            <option>Automático</option>
+                            <option>Manual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-row">
+                    <div class="control-label">Acionar sistema em:</div>
+                    <select class="dropdown">
+                        <option>35°C</option>
+                        <option>30°C</option>
+                        <option>25°C</option>
+                        <option>20°C</option>
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <div class="control-label">Potência - RPM</div>
+                    <select class="dropdown">
+                        <option>Automático</option>
+                        <option>Manual</option>
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <div class="control-label">RPM Atual:</div>
+                    <div class="rpm-display">3.000 RPM</div>
+                </div>
+
+                <button class="reset-button">Reiniciar padrão de fábrica</button>
+
+                <button class="save-button">Salvar</button>
+            </div>
+        </div>
+
+        <div class="timestamp">22/10/25 - 09:21</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
